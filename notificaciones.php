@@ -25,8 +25,12 @@ $info = [
  'action' => $_POST['action'],
  'user_id' =>$_POST['img']
 ];
-
+ echo $info["id"]
 ?>
+
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -36,9 +40,6 @@ $info = [
     <title>notificaciones</title>
 </head>
 <body>
- hola wachines
- <div> 
- <?php echo $info["id"]; ?>
-</div>
+ hola wachines 
  </body>
 </html>
