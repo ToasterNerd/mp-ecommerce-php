@@ -25,7 +25,7 @@ require_once 'credenciales.php';
     $file = $direccion . "direccion";
     file_put_contents($file, $infojson);*/
 
-  echo $info;
+  echo $info["payment_id"];
 
 ?>
 
