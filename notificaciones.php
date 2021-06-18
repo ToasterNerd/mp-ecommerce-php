@@ -1,6 +1,6 @@
 <?php
 
-    MercadoPago\SDK::setAccessToken(ACCESS_TOKEN_MARKETPLACE);
+    MercadoPago\SDK::setAccessToken($access_token);
     MercadoPago\SDK::setIntegratorId(getenv('dev_24c65fb163bf11ea96500242ac130004'));
     $info = json_decode($this->input->raw_input_stream);
 
