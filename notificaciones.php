@@ -37,6 +37,8 @@ $info = [
 </head>
 <body>
  hola wachines
-   <?php echo $info["id"]; ?>
-</body>
+ <div> 
+ <?php echo $info["id"]; ?>
+</div>
+ </body>
 </html>
