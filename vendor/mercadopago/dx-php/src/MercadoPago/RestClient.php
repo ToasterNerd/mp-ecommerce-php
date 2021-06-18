@@ -168,10 +168,9 @@ class RestClient
             $connect->setOption(CURLOPT_PROXYPORT, $proxyPort);
         }
         //ESTE IF ERA EL QUE YO OBVIÉ PARA PODER PROBAR
-        //if ($useSsl = $this->getArrayValue($connectionParams, 'use_ssl')) {
-        //    $connect->setOption(CURLOPT_SSL_VERIFYPEER, $useSsl);
-        $connect->setOption(CURLOPT_SSL_VERIFYPEER, false);
-        //}
+        if ($useSsl = $this->getArrayValue($connectionParams, 'use_ssl')) {
+           $connect->setOption(CURLOPT_SSL_VERIFYPEER, $useSsl);
+        }
         if ($sslVersion = $this->getArrayValue($connectionParams, 'ssl_version')) {
             $connect->setOption(CURLOPT_SSLVERSION, $sslVersion);
         }
