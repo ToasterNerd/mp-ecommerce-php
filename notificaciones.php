@@ -36,6 +36,7 @@ $info = [
     <title>notificaciones</title>
 </head>
 <body>
+ hola wachines
    <?php echo $info["id"]; ?>
 </body>
 </html>
