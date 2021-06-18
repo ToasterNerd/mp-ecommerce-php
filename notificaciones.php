@@ -25,5 +25,5 @@ $info = [
  'action' => $_POST['action'],
  'user_id' =>$_POST['img']
 ];
-
+echo $info["id"];
 ?>
