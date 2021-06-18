@@ -7,7 +7,6 @@ require_once 'credenciales.php';
     switch($_POST["type"]) {
         case "payment":
             $payment = MercadoPago\Payment.find_by_id($_POST["id"]);
-      echo $payment;
             break;
         case "plan":
             $plan = MercadoPago\Plan.find_by_id($_POST["id"]);
