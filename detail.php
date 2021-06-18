@@ -56,7 +56,7 @@ $preference->payment_methods = array(
 
 //REFERIDO A LOS BACK_URL-------------------------------------------
 //invento 3 paginas
-$redirige_url = "http://localhost/certificado_mp/mp-ecommerce-php-master/";
+$redirige_url = "https://toasternerd-mp-commerce-php.herokuapp.com/";
 $preference->back_urls = array(
   "success" => $redirige_url . "aprobado.php",
   "failure" => $redirige_url . "rechazado.php",
