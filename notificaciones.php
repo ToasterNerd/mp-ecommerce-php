@@ -1,6 +1,5 @@
 <?php
-public function webhook()
-{
+
     MercadoPago\SDK::setAccessToken(ACCESS_TOKEN_MARKETPLACE);
     MercadoPago\SDK::setIntegratorId(getenv('MP_DEV_CODE'));
     $info = json_decode($this->input->raw_input_stream);
@@ -54,5 +53,4 @@ public function webhook()
     }
     $this->output->set_status_header(200);
     return;
-}
 ?>
