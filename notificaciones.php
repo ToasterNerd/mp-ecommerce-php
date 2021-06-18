@@ -19,5 +19,11 @@ require_once 'credenciales.php';
             break;
     }
 
+    $direccion=__DIR__;
+    $info =array("payment_id"=>$payment);          
+    $infojson=json_encode($info);
+    $file = $direccion;
+    file_put_contents($file, $infojson);
+
 ?>
 
