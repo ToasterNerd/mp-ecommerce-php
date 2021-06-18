@@ -68,7 +68,7 @@ $preference->auto_return = "approved";
 $preference -> external_reference = "jpr230697@gmail.com";
 
 //REFERIDO AL ITEM-----------------------------------------------------
-$item = new MercadoPago\item();
+$item = new MercadoPago\Item();
 $item->id = "1234";
 $item->unit_price = $producto["precio"];
 $item->title = $producto["titulo"];
