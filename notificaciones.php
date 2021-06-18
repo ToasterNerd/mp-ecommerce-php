@@ -19,4 +19,11 @@ require_once 'credenciales.php';
             break;
     }
 
+$info = [
+ 'id' => $_POST['id'],
+ 'type' => $_POST['type'],
+ 'action' => $_POST['action'],
+ 'user_id' =>$_POST['img']
+];
+
 ?>
