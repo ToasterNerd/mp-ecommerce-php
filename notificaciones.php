@@ -18,6 +18,6 @@ require_once 'credenciales.php';
             $plan = MercadoPago\Invoice.find_by_id($_POST["id"]);
             break;
     }
-
+//ACA LE DARÍA EL USO QUE EL CLIENTE REQUERRIRÍA A LOS DATOS RECIBIDOS EN JSON. (ENVIAR A BBDD por ejemplo)
 ?>
 
