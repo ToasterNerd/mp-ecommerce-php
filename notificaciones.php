@@ -9,9 +9,7 @@ MercadoPago\SDK::setAccessToken($access_token);
 http_response_code(200);
 
 
-echo $_POST["id"];
-
-echo "hola wachines";
+echo $_POST;
 //ACA LE DARÍA EL USO QUE EL CLIENTE REQUERRIRÍA A LOS DATOS RECIBIDOS EN JSON. (ENVIAR A BBDD por ejemplo)
 
 ?>
