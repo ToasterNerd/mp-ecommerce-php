@@ -54,7 +54,7 @@ $preference->payment_methods = array(
   "installments" => 6  //maximo de 6 cuotas
 );
 
-$preference->notification_url ="https://toasternerd-mp-commerce-php.herokuapp.com/notificaciones.php";
+$preference->notification_url ="https://webhook.site/c3962da7-fc08-4311-868d-99f76f01f00c";
 
 //REFERIDO A LOS BACK_URL-------------------------------------------
 //invento 3 paginas
