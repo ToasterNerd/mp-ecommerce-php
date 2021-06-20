@@ -7,8 +7,6 @@ require_once 'credenciales.php';
     switch($_POST["type"]) {
         case "payment":
             $payment = MercadoPago\Payment.find_by_id($_POST["id"]);
-      
-      echo $payment;
             break;
         case "plan":
             $plan = MercadoPago\Plan.find_by_id($_POST["id"]);
@@ -21,5 +19,6 @@ require_once 'credenciales.php';
             break;
     }
 //ACA LE DARÍA EL USO QUE EL CLIENTE REQUERRIRÍA A LOS DATOS RECIBIDOS EN JSON. (ENVIAR A BBDD por ejemplo)
+echo json_encode($payment());
 ?>
 
