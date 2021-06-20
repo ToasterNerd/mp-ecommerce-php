@@ -2,11 +2,15 @@
  <?php
 require 'vendor/autoload.php';
 require_once 'credenciales.php';
-    MercadoPago\SDK::setAccessToken($access_token);
  
-    switch($_POST["type"]) {
+MercadoPago\SDK::setAccessToken($access_token);
+
+ $_POST = json_decode(file_get_contents('php://input'), true);
+  
+switch($_POST["type"]) {
         case "payment":
-            $_POST = json_decode(file_get_contents('php://input'), true);
+            $payment = MercadoPago\payment.find_by_id($_POST["id"]);
+            
             break;
         case "plan":
             $plan = MercadoPago\Plan.find_by_id($_POST["id"]);
