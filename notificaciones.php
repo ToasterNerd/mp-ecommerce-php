@@ -9,7 +9,7 @@ MercadoPago\SDK::setAccessToken($access_token);
   
 switch($_POST["type"]) {
         case "payment":
-            $payment = MercadoPago\payment.find_by_id($_POST["id"]);
+            $payment = MercadoPago\Payment.find_by_id($_POST["id"]);
             
             break;
         case "plan":
