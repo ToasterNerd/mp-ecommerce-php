@@ -19,6 +19,7 @@ require_once 'credenciales.php';
             break;
     }
 //ACA LE DARÍA EL USO QUE EL CLIENTE REQUERRIRÍA A LOS DATOS RECIBIDOS EN JSON. (ENVIAR A BBDD por ejemplo)
+http_response_code(200);
 echo json_encode($payment());
 ?>
 
