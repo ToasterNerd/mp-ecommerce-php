@@ -7,6 +7,15 @@ require_once 'credenciales.php';
     switch($_POST["type"]) {
         case "payment":
             $payment = MercadoPago\Payment.find_by_id($_POST["id"]);
+            $payment = MercadoPago\Payment.find_by_id($_POST["live_mode"]);
+            $payment = MercadoPago\Payment.find_by_id($_POST["type"]);
+            $payment = MercadoPago\Payment.find_by_id($_POST["date_created"]);
+            $payment = MercadoPago\Payment.find_by_id($_POST["aplication_id"]);
+            $payment = MercadoPago\Payment.find_by_id($_POST["user_id"]);
+            $payment = MercadoPago\Payment.find_by_id($_POST["version"]);
+            $payment = MercadoPago\Payment.find_by_id($_POST["api_version"]);
+            $payment = MercadoPago\Payment.find_by_id($_POST["action"]);
+            $payment = MercadoPago\Payment.find_by_id($_POST["data"]["id"]);
             break;
         case "plan":
             $plan = MercadoPago\Plan.find_by_id($_POST["id"]);
